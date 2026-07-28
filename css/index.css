@@ -57,9 +57,7 @@ header{
 .navbar-div{
     display: flex;
     align-items: center;    
-    justify-content: space-between;
     vertical-align: middle;
-    gap: 30px;
 }
 
 .navbar-div a{
@@ -77,7 +75,6 @@ header{
     font-weight: bold;
     cursor: pointer;
     border-radius: 100px;
-
 }
 
 #logo{
