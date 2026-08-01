@@ -19,8 +19,10 @@
     font-style: normal;
 }
 
-body{
+html, body{
     background-color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*Header*/
@@ -215,4 +217,102 @@ u{
     height: auto;
     object-fit: cover;
     margin-top: 5vh;
+}
+
+/*Content Two*/
+
+.content-two{
+    position: absolute;
+    top: 120vh;
+    width: 99%; 
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+}
+
+.col-zero{
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.head-text-two{
+    font-family: 'Instrument Serif Regular', sans-serif;
+    font-size: 5vw;
+    color: #333;
+    word-spacing: 0.1em;
+    line-height: 1;
+    text-align: center;
+}
+.body-text-two{
+    font-family: 'Instrument Sans Regular', sans-serif;
+    font-size: 1vw;
+    color: #333;
+    word-spacing: 0.1em;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: -5vh;
+    width: 50%;
+    margin-bottom: 10vh;
+}
+
+#col-one-img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+#col-two-img{
+    width: 83%;
+    height: auto;
+    object-fit: cover;
+}
+
+#col-three-img{
+    width: 78%;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-one, .col-two, .col-three{
+    background-color: #FBFBFB;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 1vh;
+    margin-bottom: 5vh;
+    gap: 10vw;
+}
+
+.col-one{
+    
+}
+
+.col-one-right, .col-three-right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0.5vw 0.5vh;
+}
+
+.main-item{
+    font-family: 'Instrument Sans Regular', sans-serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: -1.5vh;
+}
+
+.desc{
+    font-family: 'Instrument Sans Regular', sans-serif;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-bottom: 1vh;
 }
