@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Instrument Serif Italic';
-    src: url('../fonts/Instrument_Serif/InstrumentSerif-Italic.ttf') format('truetype');
+    src: url('../fonts/InstrumentSerif-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Instrument Serif Regular';
-    src: url('../fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+    src: url('../fonts/InstrumentSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Instrument Sans Regular';
-    src: url('../fonts/Instrument_Sans/InstrumentSans-Regular.ttf') format('truetype');
+    src: url('../fonts/InstrumentSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -145,11 +145,11 @@ header{
 }
 
 .big-text {
-    font-family: 'Instrument Serif Italic', serif;
-    font-size: clamp(3.5rem, 6vw, 7rem);
+    font-family: 'Instrument Serif Regular', serif;
+    font-size: clamp(3.5rem, 6.5vw, 7rem);
     line-height: 0.9;
-    letter-spacing: -0.04em;
     color: #1d1d1d;
+    text-align: left;
 }
 
 .big-text i {
@@ -167,6 +167,7 @@ header{
     line-height: 1.5rem;
     color: #2b2b2b;
     max-width: 480px;
+    text-align: justify;
 }
 
 .hero-buttons {
@@ -175,14 +176,14 @@ header{
     align-items: center;
     gap: 14px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 13%;
 }
 
 #posa-one {
     position: absolute;
-    left: -20px;
-    top: -20px;
-    width: 90px;
+    left: -5%;
+    top: -80%;
+    width: 18%;
     z-index: 0;
 }
 
@@ -192,7 +193,7 @@ header{
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-left: 50px;
+    margin-left: 8%;
 }
 
 #hero-feature {
@@ -238,7 +239,7 @@ header{
 
 .head-text-two,
 .head-text-three {
-    font-family: 'Instrument Serif Italic', serif;
+    font-family: 'Instrument Serif Regular', serif;
     font-size: clamp(2.8rem, 4vw, 5rem);
     line-height: 1;
     color: #1d1d1d;
@@ -302,10 +303,18 @@ header{
     align-items: center;
 }
 
-#col-one-img,
-#col-two-img,
-#col-three-img {
+#col-one-img {
     width: min(100%, 330px);
+    height: auto;
+}
+
+#col-two-img {
+    width: min(100%, 250px);
+    height: auto;
+}
+
+#col-three-img {
+    width: min(100%, 200px);
     height: auto;
 }
 
@@ -345,13 +354,29 @@ header{
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .link-github a {
     color: #1d1d1d;
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+
+.divider {
+    width: 100%;
+    height: 4em;
+    margin: 40px 0;
+}
+.divider-mini {
+    width: 100%;
+    height: 1.3em;
+    margin: 20px 0;
+}
+.divider-regular {
+    width: 100%;
+    height: 3em;
+    margin: 20px 0;
 }
 
 .boxes {
@@ -365,9 +390,9 @@ header{
 
 #posa-two {
     position: absolute;
-    top: -28px;
+    top: -3em;
     left: 0;
-    width: 120px;
+    width: 7rem;
     z-index: 0;
 }
 
@@ -454,11 +479,12 @@ header{
 
 #footer-info-2 {
     align-items: flex-start;
-    gap: 40px;
+    gap: 10px;
+    margin-right: 13em;
 }
 
 #site-info {
-    max-width: 430px;
+    max-width: 380px;
     line-height: 1.3rem;
     color: #1f2a1f;
 }
@@ -466,13 +492,11 @@ header{
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 25px;
 }
 
 .footer-links a,
-#footer-info-3 a,
-#a-links-1 a,
-#feedback {
+#footer-info-3 a{
     color: #1f2a1f;
     text-decoration: none;
 }
@@ -494,6 +518,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+#a-links-1 a, #feedback{
+    color:#4a5d35;
+    text-decoration: underline;
+    font-size: 0.7rem;
 }
 
 @media (max-width: 900px) {
@@ -548,5 +578,12 @@ hr {
     #footer-info-3 {
         flex-direction: column;
         align-items: flex-start;
+    }
+    
+
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
