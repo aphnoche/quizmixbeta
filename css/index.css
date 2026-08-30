@@ -95,79 +95,102 @@ header{
 
 /* Container needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 /* Style the actual dropdown trigger button */
-/* Style the actual dropdown trigger button */
 .dropbtn {
-    background-color: #FFFFFF;
+    background-color: transparent;
     color: #1d1d1d;
     padding: 12px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    display: inline-flex;    /* Keeps the button inline but enables layout rules */
-    align-items: center;     /* Centers text and arrow vertically */
-    gap: 8px;                /* Controls space between text and the arrow */
+    border-radius: 20px;
+    display: inline-flex;    
+    align-items: center;     
+    gap: 8px;                
 }
 
-
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content Box */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: 
-  #ffffff;
-  min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 4px;
-  margin-top: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px; 
-  border-radius: 20px;
+    display: none;             /* Hidden by default */
+    position: absolute;
+    background-color: #f1f1f1; /* Match the soft gray layout */
+    min-width: 180px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08); 
+    z-index: 1;
+    margin-top: 12px;
+    padding: 16px 0px;           
+    border-radius: 24px;         
 }
 
 /* Style links inside the dropdown */
 .dropdown-content a {
-  color: #333333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: #1d1d1d;
+    font-weight: 500;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: flex;             /* Align text and arrows horizontally */
+    align-items: center;
+    gap: 8px;                    
 }
 
-/* Change color of dropdown links on hover */
+/* Hover effect for text link rows */
 .dropdown-content a:hover {
-  background-color: #f1f1f136;
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
-/* MAGIC TRICK: Show the dropdown menu on hover */
+/* Specific styling for the link wrapping the button */
+.dropdown-content a.button-link {
+    display: flex;
+    justify-content: center;     /* Centers the pill button completely */
+    padding: 8px 16px 0px 16px;  /* Resets standard link padding */
+}
+
+.dropdown-content a.button-link:hover {
+    background-color: transparent; /* Prevents row highlight behind button */
+}
+
+/* Bottom Pill Button styling */
+.open-qmix {
+    background-color: transparent;
+    border: 1px solid #1d1d1d;
+    border-radius: 999px;
+    padding: 12px 0px;
+    width: 100%;               
+    cursor: pointer;
+    color: #1d1d1d; 
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.open-qmix:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- THE HOVER & ACTIVE TRIGGERS (WHAT BROKE) --- */
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
-/* Optional: Change the button color when the dropdown is active */
+/* Change the button color when the dropdown is hovered */
 .dropdown:hover .dropbtn {
-  background-color: rgb(229, 227, 227);
+    background-color: transparent;
 }
 
+/* JavaScript State Triggers (if you are using the JS toggle script) */
 .dropdown.is-active .dropdown-content {
-  display: block;
+    display: block;
 }
 .dropdown.is-active .dropbtn {
-  background-color: rgb(229, 227, 227);
+    background-color: transparent;
 }
 
-.open-qmix{
-    border: 1px solid #000000;
-    border-radius: 999px;
-    padding: 14px 24px;
-    cursor: pointer;
-    color: #1a1a1a; 
-}
 
 .open-button{
     margin-right: 2%;
